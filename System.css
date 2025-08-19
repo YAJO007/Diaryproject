@@ -1,35 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Handlee);
 
-body{
-	margin: 40px 0 0;
-    background: #91D1D3;
-    font-family: 'Roboto', sans-serif;
+body {
+    background-color: #93c8db;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.45px, #93c8db 0.45px);
+    background-size: 9px 9px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 75px;
-  color: #000000;
-} 
+    text-align: center;
+    font-size: 75px;
+    color: #000000;
+}
 
-button{
-   transition: all .25s;
+button {
+    transition: all .25s;
     background: #7d9faa;
     border-radius: 10px;
     box-shadow: 0 5px 0 0 #42646f, 0 8px 0 5px #001a24;
     color: #fff;
     display: block;
     font-size: 20px;
-    margin: 0 ;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin: 0 auto;
     padding: 10px;
-    position: relative;
+    position: absolute;
+    bottom: 100px;
+    right: 550px;
     text-align: center;
     text-shadow: 0 2px 0 #42646f;
     width: 120px;
-    z-index: 1;
+    z-index: 10;
     font-family: Helvetica, arial, sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -41,16 +42,19 @@ button{
     max-width: 800px;
     min-width: 400px;
     height: 600px;
-    margin: 0 auto ;
+    margin: 0 auto;
     background: #fafafa;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
     overflow: hidden;
 }
+
 .paper:before {
     content: '';
     position: absolute;
-    top: 0; bottom: 0; left: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
     width: 60px;
     background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
     background-size: 30px 30px;
@@ -60,7 +64,10 @@ button{
 
 .paper-content {
     position: absolute;
-    top: 30px; right: 0; bottom: 30px; left: 60px;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 60px;
     background: linear-gradient(transparent, transparent 28px, #000000 28px);
     background-size: 30px 30px;
 }
@@ -87,8 +94,9 @@ footer {
     margin-top: 30px;
     text-align: center;
     font-size: 12px;
-    color: rgba(0,0,0,.6);
+    color: rgba(0, 0, 0, .6);
 }
+
 footer a {
     color: rgba(255, 255, 255, 0.8);
 }
