@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+body{
+	margin: 40px 0 0;
+    background: #91D1D3;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  color: #000000;
+} 
+
+button{
+   transition: all .25s;
+    background: #7d9faa;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 0 #42646f, 0 8px 0 5px #001a24;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin: 0 ;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 2px 0 #42646f;
+    width: 120px;
+    z-index: 1;
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.paper {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 600px;
+    margin: 0 auto ;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: absolute;
+    top: 30px; right: 0; bottom: 30px; left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #000000 28px);
+    background-size: 30px 30px;
+}
+
+.paper-content textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: rgb(205, 0, 0);
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0,0,0,.6);
+}
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
